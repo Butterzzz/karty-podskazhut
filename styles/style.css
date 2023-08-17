@@ -58,6 +58,14 @@ figure {
   font-size: 18px;
 }
 
+.content__text-block_type_first-lettered.content__paragraph:first-of-type::first-letter {
+  display: inline-block;
+  font-weight: 700;
+  background-color: var(--accent-color);
+  padding: 0 4px;
+  margin: 0 1px 0 0;
+}
+
 .content__paragraph a {
   color: currentColor;
 }
