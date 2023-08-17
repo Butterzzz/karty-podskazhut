@@ -1,7 +1,7 @@
 :root {
-  --bg-color: #F3EFEC;
-  --text-color: #312A4E;
-  --accent-color: #FFAB6B;
+  --bg-color: #f3efec;
+  --text-color: #312a4e;
+  --accent-color: #ffab6b;
   --main-font: Raleway;
   --accent-font: 'STIX Two Text';
 }
@@ -10,11 +10,14 @@
 *::before,
 *::after {
   box-sizing: border-box;
-}s
+}
 
 .page {
   min-inline-size: 360px;
   margin: 0;
+  font-family: var(--main-font, sans-serif);
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 p,
@@ -27,4 +30,17 @@ ol,
 li,
 figure {
   margin: 0;
+}
+
+.heading {
+  font-family: var(--accent-font, serif);
+  text-align: center;
+  font-weight: 600;
+  line-height: 90%; /* 27px */
+}
+
+.content-section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 5vi;
 }
