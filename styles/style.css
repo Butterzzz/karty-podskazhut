@@ -47,6 +47,53 @@ figure {
   font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
 }
 
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-block-start: 1px solid currentColor;
+  border-block-end: 1px solid currentColor;
+  padding-block: 20px;
+}
+
+.header__theme-toggler {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.header__theme-button {
+  position: relative;
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  color: currentColor;
+  cursor: pointer;
+  padding: 0;
+}
+
+.header__theme-button:hover {
+  text-decoration: underline;
+}
+
+.header__theme-button_is-active {
+  font-weight: 700;
+}
+
+.header__theme-button_is-active::after {
+  content: '';
+  position: absolute;
+  inset-block-end: 0.3ch;
+  inset-inline-start: -4px;
+  inline-size: calc(100% + 8px);
+  block-size: 0.5ch;
+  background-color: var(--accent-color);
+  z-index: -1;
+}
+
 .heading {
   font-family: var(--accent-font, serif);
   font-weight: 600;
